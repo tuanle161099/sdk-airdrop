@@ -3,6 +3,7 @@ import { PublicKey } from '@solana/web3.js'
 import {
   AnchorWallet,
   DEFAULT_RPC_ENDPOINT,
+  DEFAULT_SEN_UTILITY_PROGRAM_ID,
   FeeOptions,
   isAddress,
   Leaf,
@@ -26,7 +27,7 @@ export class Airdrop {
   constructor(
     wallet: AnchorWallet,
     rpcEndpoint: string = DEFAULT_RPC_ENDPOINT,
-    programId: string = DEFAULT_RPC_ENDPOINT,
+    programId: string = DEFAULT_SEN_UTILITY_PROGRAM_ID,
   ) {
     this._utility = new Utility(wallet, rpcEndpoint, programId)
   }

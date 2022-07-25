@@ -157,7 +157,6 @@ export class Airdrop {
       const { metadata } = distributor
       const merkleDistributor = await this.getMerkleData(metadata)
       const recipients = merkleDistributor.receipients
-      console.log(recipients, 'recipients')
       const myRecipient = this.getAirdropByOwner(
         walletAddress,
         recipients,

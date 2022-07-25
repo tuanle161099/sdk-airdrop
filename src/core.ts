@@ -10,9 +10,13 @@ import {
   Utility,
 } from '@sentre/utility'
 
-import { AirdropReceivedData, RecipientInfo, WrapDistributorData } from 'types'
-import { getCID, isRevoke, toUnitTime } from 'utils'
-import IPFS from 'ipfs'
+import {
+  AirdropReceivedData,
+  RecipientInfo,
+  WrapDistributorData,
+} from './types'
+import { getCID, isRevoke, toUnitTime } from './utils'
+import IPFS from './ipfs'
 import { CID } from 'multiformats'
 
 export class Airdrop {
